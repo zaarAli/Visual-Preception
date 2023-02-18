@@ -455,36 +455,35 @@ def estimate_affine_transform(previous_frame, current_frame, method=cv2.RANSAC):
 
 Here are a few results of the Harris Corner detector:
 
+![000000](https://user-images.githubusercontent.com/86875043/219847308-a8d51c43-e5ed-4034-9fed-8c3b879db4af.png)
 
-![Haaris Corner Detector Result # 1](https://user-images.githubusercontent.com/86875043/219846894-f255827c-aa32-400e-bc31-2327bb76158d.png)
+![000027](https://user-images.githubusercontent.com/86875043/219847310-85c80203-49ac-46d3-8d93-aa528bd779ab.png)
 
-![Haaris Corner Detector Result # 2](https://user-images.githubusercontent.com/86875043/219846915-c1716691-d574-40d5-b881-49d59865ac9b.png)
-
-![Haaris Corner Detector Result # 2](https://user-images.githubusercontent.com/86875043/219846924-f599f88b-f454-4f3f-bbe4-19c8a0f6de43.png)
+![000042](https://user-images.githubusercontent.com/86875043/219847313-a7b1d960-08e9-497f-a76e-bae1794ae3d3.png)
 
 The rest of the results can be seen in the uploaded folder.
 
 ## Corner Tracking with Patch Templates based on pixel intensities
 
-![000000](https://user-images.githubusercontent.com/86875043/219847240-63b749e2-48bf-4a23-9816-03ed92f1b30c.png)
-![000001](https://user-images.githubusercontent.com/86875043/219847244-b222cf1f-9d41-46f0-bac7-2ec6ed0479a4.png)
-![000002](https://user-images.githubusercontent.com/86875043/219847246-86301ba6-71ad-42ad-b9ce-d70b22921bc0.png)
-![000003](https://user-images.githubusercontent.com/86875043/219847248-d62ccabf-a283-4ff0-8a69-cac06d3e0946.png)
-![000004](https://user-images.githubusercontent.com/86875043/219847252-37097f28-a187-4664-9eda-93830f6d4639.png)
-![000005](https://user-images.githubusercontent.com/86875043/219847260-76e6863b-c6fc-443c-a929-a8b098d4ad12.png)
+![result_0](https://user-images.githubusercontent.com/86875043/219847331-a7913bd9-d3eb-485e-9809-13e54e8d7c85.png)
+![result_1](https://user-images.githubusercontent.com/86875043/219847333-05a26d99-0493-4819-80da-67ed0f5ea9ea.png)
+![result_2](https://user-images.githubusercontent.com/86875043/219847335-348c2d5e-c31e-43ef-a372-81f319b12c6b.png)
+![result_34](https://user-images.githubusercontent.com/86875043/219847340-ed8f72d6-36ee-49d5-9055-eb7f50d1f1cc.png)
+![result_35](https://user-images.githubusercontent.com/86875043/219847347-edca0198-498e-4869-99b6-62c56f2643a8.png)
+![result_36](https://user-images.githubusercontent.com/86875043/219847349-ce42a4bd-681e-442b-be78-ea67917a6598.png)
+
 
 
 The rest of the result can be seen in the uploaded folder with the same name. Also, you can see the video that has been uplaoaded.
 
-## Corner Tracking with Patch Templates based on pixel intensities
+## Corner Tracking with SIFT Features
+![result_2](https://user-images.githubusercontent.com/86875043/219847359-94e4d839-606a-4ecf-8658-d64fffdf6c5b.png)
+![result_3](https://user-images.githubusercontent.com/86875043/219847360-d0bcf51c-2ca6-4ef1-ae17-48c9a3f172d3.png)
+![result_4](https://user-images.githubusercontent.com/86875043/219847361-01ed5918-4563-4997-b826-466523ea692f.png)
+![result_34](https://user-images.githubusercontent.com/86875043/219847365-4472622e-1724-4581-800b-c43219a1d51f.png)
+![result_35](https://user-images.githubusercontent.com/86875043/219847369-9ecac5c7-e84e-4d93-8662-105cb095fcef.png)
+![result_36](https://user-images.githubusercontent.com/86875043/219847373-c28cbf7d-63d8-4a83-b681-3268ca116319.png)
 
-![result_0](https://user-images.githubusercontent.com/86875043/219847194-78348dea-0a3c-4e39-94d2-8d1c7acff303.png)
-![result_1](https://user-images.githubusercontent.com/86875043/219847196-d0956b74-6051-4304-89fd-65b5fffc3614.png)
-![result_2](https://user-images.githubusercontent.com/86875043/219847198-8649492a-a027-45b9-aa39-03f6a838b8ad.png)
-
-![result_18](https://user-images.githubusercontent.com/86875043/219847206-8dc5f1c0-8909-4451-99a6-91c5e4ff1e72.png)
-![result_19](https://user-images.githubusercontent.com/86875043/219847207-c813b532-b180-4233-a411-fe6816dae397.png)
-![result_20](https://user-images.githubusercontent.com/86875043/219847211-821eaa05-1cd8-405b-ad53-40dd39ae7b16.png)
 
 # Conclusion
 
