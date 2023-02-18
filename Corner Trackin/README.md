@@ -466,11 +466,18 @@ The rest of the results can be seen in the uploaded folder.
 
 The video bellow shows the results of Corner tracking on the first 50 images of the kitti dataset using patches based on the intensites.
 
-https://user-images.githubusercontent.com/86875043/219846818-c392276d-6397-4a68-a11a-968fcd8df66a.mp4
+
+(https://user-images.githubusercontent.com/86875043/219847041-fc4beff2-8922-4743-9164-0c3fec0401e3.mp4)
+
+
 
 The video bellow shows the results of Corner tracking on the first 50 images of the kitti dataset using SIFT features.
 
-https://user-images.githubusercontent.com/86875043/219846876-25d436bb-0f1f-4041-b383-fb61e716d257.mp4
+
+https://user-images.githubusercontent.com/86875043/219847058-6acceba8-493d-4fa7-8cf7-f8838d8d1025.mp4
+
+
+
 
 
 
