@@ -103,3 +103,8 @@ The steps involved in this project are as follows:
 6. Use the world points and their corresponding pixel coordinates to estimate the camera calibration parameters, including the intrinsic matrix and distortion coefficients.<br><br>
 
 This project is useful for understanding the fundamental principles of camera simulation and calibration, which are essential for many applications in computer vision and robotics. It also provides a practical implementation of these concepts using Python and homogeneous coordinates. The project report includes details on the theory, implementation, and results.
+
+## Libraries used:
+- numpy
+- matplotlib
+- scipy
