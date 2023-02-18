@@ -19,6 +19,66 @@ Here are the general steps involved in the DLT algorithm:
 
 The DLT algorithm is widely used in computer vision and has many applications, such as 3D reconstruction, pose estimation, and augmented reality. However, it has limitations and assumptions, such as the need for known correspondences between 3D world points and their 2D image coordinates, and the assumption of idealized perspective projection.<br>
 
+## Mathematics for Camera Simulation
+
+Projection Matrix :  $P_{mat}= M_{int} * M_{ext}$
+
+So we have : 
+
+1. Intrinsic Paramters:
+
+$M_{int}=
+\left[\begin{matrix}
+fk_x & S & C_x & 0\\
+0 & fk_y & C_y & 0\\
+0 & 0 & 1 & 0
+\end{matrix}\right]$
+
+2. Extrinsic Paramters:
+$M_{ext}=
+\left[\begin{matrix}
+R & T\\
+0 & 1
+\end{matrix}\right]$
+
+
+$ T=
+\left[\begin{matrix}
+x \\
+y \\
+z \\
+1
+\end{matrix}\right]$
+
+We multiply these rotations to have the total rotation of the system: 
+
+$R_t = R_z * R_y * R_z $
+
+with $\beta$ is the angle of rotation around _'x'_, $\alpha$ around _'y'_ and $\theta$ around _'z'_ 
+
+$R_{z}=
+\left[\begin{matrix}
+cos(\theta) & -sin(\theta) & 0\\
+sin(\theta) & cos(\theta) & 0 \\
+0 & 0 & 1 
+\end{matrix}\right]$
+
+
+$R_{y}=
+\left[\begin{matrix}
+cos(\alpha) & 0 & sin(\alpha)\\
+ 0 & 1 & 0\\
+-sin(\alpha) & 0 & cos(\alpha) 
+\end{matrix}\right]$
+
+
+$R_{x}=
+\left[\begin{matrix}
+1 & 0 & 0\\
+0 & cos(\beta) & -sin(\beta)\\
+0 & sin(\beta) & cos(\beta) 
+\end{matrix}\right]$
+
 ## Procedure
 
 The steps involved in this project are as follows:
