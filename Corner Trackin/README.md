@@ -449,6 +449,10 @@ def estimate_affine_transform(previous_frame, current_frame, method=cv2.RANSAC):
     return M
 ```
 
+# Results
+
+[Corner Tracking with Patch Templates](Corner Tracking with Patch Templates.mp4)
+
 # Conclusion
 
 In conclusion, we successfully implemented various techniques for corner
