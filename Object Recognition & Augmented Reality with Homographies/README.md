@@ -454,7 +454,8 @@ with the newly launched cars.
 
 <figure id="fig:10">
 <figure>
-<img src="Images/final result 2.png" />
+<img src="Object Recognition & Augmented Reality with Homographies
+/Images/final result 2.png" />
 <figcaption>Scuderia Ferrari SF-23</figcaption>
 </figure>
 <figure>
@@ -475,7 +476,8 @@ year’s season!
 The results are:
 
 <figure id="fig:11">
-<img src="Images/Keypoints_refrence_FAST_ORB.png" />
+<img src="Object Recognition & Augmented Reality with Homographies
+/Images/Keypoints_refrence_FAST_ORB.png" />
 <figcaption>Keypoints extracted using FAST for the refrence
 image</figcaption>
 </figure>
@@ -485,7 +487,9 @@ based on the corner detection.
 
 <figure id="fig:12">
 <figure>
-<img src="Images/Matches_FAST_ORB.png" />
+<img src="
+Object Recognition & Augmented Reality with Homographies
+/Images/Matches_FAST_ORB.png" />
 <figcaption>Feature Matching between refrence image and Image 2 using
 FAST and ORB</figcaption>
 </figure>
