@@ -53,7 +53,10 @@ In detail procedure of Harris Corner Detection is af following:
 Gaussian smoothing filter is applied to remove noise from an image because it has the ability to preserve edges while blurring out the noise present in the image. The Gaussian filter works by replacing each pixel value with the average of its neighboring pixels, weighted by the Gaussian function. This has the effect of smoothing out the noise and preserving the important details of the image, such as edges and contours. The size of the filter determines the extent of smoothing and the standard deviation of the Gaussian function determines the degree of smoothing. Gaussian smoothing is a simple and effective technique for removing noise from images, and it is widely used in various computer vision and image processing applications.
 
 The Gaussian filter is defined as:
-$$  f(x) = \frac{1}{\sigma\sqrt{2\pi}}e^{\frac{-1}{2}\left(\frac{x-\mu}{\sigma}\right)^2} $$
+
+$$  
+f(x) = \frac{1}{\sigma\sqrt{2\pi}}e^{\frac{-1}{2}\left(\frac{x-\mu}{\sigma}\right)^2} 
+$$
 
 We used a $3X3$ Gaussian kernal with a $\sigma$ of 0.1.
 
