@@ -451,7 +451,29 @@ def estimate_affine_transform(previous_frame, current_frame, method=cv2.RANSAC):
 
 # Results
 
-[Corner Tracking with Patch Templates](Corner Trackin/Corner Tracking with Patch Templates.mp4)
+Here are a few results of the Harris Corner detector:
+
+
+![Haaris Corner Detector Result # 1](https://user-images.githubusercontent.com/86875043/219846894-f255827c-aa32-400e-bc31-2327bb76158d.png)
+
+![Haaris Corner Detector Result # 2](https://user-images.githubusercontent.com/86875043/219846915-c1716691-d574-40d5-b881-49d59865ac9b.png)
+
+![Haaris Corner Detector Result # 2](https://user-images.githubusercontent.com/86875043/219846924-f599f88b-f454-4f3f-bbe4-19c8a0f6de43.png)
+
+The rest of the results can be seen in the uploaded folder.
+
+
+
+The video bellow shows the results of Corner tracking on the first 50 images of the kitti dataset using patches based on the intensites.
+
+https://user-images.githubusercontent.com/86875043/219846818-c392276d-6397-4a68-a11a-968fcd8df66a.mp4
+
+The video bellow shows the results of Corner tracking on the first 50 images of the kitti dataset using SIFT features.
+
+https://user-images.githubusercontent.com/86875043/219846876-25d436bb-0f1f-4041-b383-fb61e716d257.mp4
+
+
+
 
 # Conclusion
 
@@ -469,3 +491,7 @@ accuracy.
 # Sources
 
 [Computing Keypoints (Cyrill Stachniss)](https://www.ipb.uni-bonn.de/html/teaching/photo12-2021/2021-pho1-10-features-keypoints.pptx.pdf)
+
+
+
+
