@@ -58,7 +58,7 @@ z \\
 
 We multiply these rotations to have the total rotation of the system: 
 
-$ R_t = R_z * R_y * R_z $
+$$R_t = R_z * R_y * R_z$$
 
 with $\beta$ is the angle of rotation around _'x'_, $\alpha$ around _'y'_ and $\theta$ around _'z'_ 
 
@@ -71,6 +71,7 @@ sin(\theta) & cos(\theta) & 0 \\
 \end{matrix}\right]
 ```
 
+
 ```math
 $R_{y}=
 \left[\begin{matrix}
@@ -78,7 +79,8 @@ cos(\alpha) & 0 & sin(\alpha)\\
  0 & 1 & 0\\
 -sin(\alpha) & 0 & cos(\alpha) 
 \end{matrix}\right]
-```math
+```
+
 
 ```math
 R_{x}=
