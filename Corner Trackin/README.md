@@ -451,7 +451,7 @@ def estimate_affine_transform(previous_frame, current_frame, method=cv2.RANSAC):
 
 # Results
 
-[Corner Tracking with Patch Templates](Corner Tracking with Patch Templates.mp4)
+[Corner Tracking with Patch Templates](Corner Trackin/Corner Tracking with Patch Templates.mp4)
 
 # Conclusion
 
