@@ -7,6 +7,7 @@ to identify and categorize objects in digital images or videos. It
 involves analyzing the characteristics of an object, such as its shape,
 size, texture, and color, and matching them with known objects in a
 database.  
+
 Object recognition has numerous practical applications, such as in
 robotics, surveillance, autonomous vehicles, medical imaging, and
 augmented reality. It has also contributed to the development of other
@@ -14,15 +15,18 @@ technologies, such as facial recognition and image search engines.
 In this assignment, we were tasked to match the painting ’The Starry
 Night’ by Vincent van Gogh in four images and replace the painting with
 the logo of ESIREM.  
+
 Object recognition using SIFT and brute force matching is a computer
 vision technique that involves detecting and matching SIFT
 (Scale-Invariant Feature Transform) descriptors in images to identify
 and locate objects.  
+
 SIFT is a feature detection algorithm that identifies key points or
 features in an image that are invariant to scale, rotation, and
 illumination changes. These features are described using a
 128-dimensional vector of values that represent the gradient orientation
 and magnitude at each pixel.  
+
 To recognize an object using SIFT and brute force matching, the
 following steps are taken:
 
@@ -109,6 +113,7 @@ one set to every feature in the other set. In the case of one-to-all
 matching, one set of features (e.g., the features in the reference
 image) is compared to another set of features (e.g., the features in
 another image conataining the refrence image).  
+
 The steps involved in brute force matching (one-to-all) are as follows:
 
 1.  **Feature detection**: The first step is to detect the features in
@@ -135,11 +140,13 @@ relationship between two images of the same scene viewed from different
 perspectives or angles. In computer vision, homography is used to warp
 or transform one image into the perspective of another image, a process
 known as image wrapping or image rectification.  
+
 The homography transformation can be represented by a 3x3 matrix that
 maps the coordinates of one image to the corresponding coordinates in
 the other image. Given a set of corresponding points in two images, the
 homography matrix can be computed using various techniques such as
 Direct Linear Transform (DLT) or RANSAC.  
+
 Once the homography matrix is computed, it can be used to warp or
 transform one image into the perspective of the other image. This is
 done by mapping the coordinates of each pixel in the first image to the
@@ -154,6 +161,7 @@ homography matrix from a set of corresponding points in two images. It
 is a variation of the standard DLT algorithm that improves the numerical
 stability and accuracy of the homography matrix by normalizing the input
 data.  
+
 The steps involved in the normalized DLT algorithm for homography are as
 follows:
 
@@ -194,6 +202,7 @@ is used to find the best model that fits a set of observed data points
 that may contain outliers. It is commonly used in computer vision
 applications such as image registration, stereo vision, and object
 recognition.  
+
 The steps involved in the RANSAC algorithm are as follows:
 
 1.  **Random sampling**: The first step is to randomly select a subset
@@ -268,6 +277,7 @@ used in computer vision and image processing. They are similar to SIFT
 (Scale-Invariant Feature Transform) in that they are used to identify
 distinctive features in an image, which can then be used to match and
 align multiple images.  
+
 The main difference between these algorithms is in the way they detect
 and describe features. SIFT detects features by finding the local maxima
 and minima of difference-of-Gaussian (DoG) images at multiple scales,
@@ -277,11 +287,13 @@ locations in an image where the intensity changes rapidly in all
 directions, and ORB is a combination of FAST and BRIEF (Binary Robust
 Independent Elementary Features), a descriptor that uses binary strings
 to describe feature locations.  
+
 Compared to SIFT, FAST and ORB are generally faster and more
 computationally efficient, but may be less robust to changes in lighting
 and other image transformations. However, they are still widely used in
 real-time applications such as robotics and augmented reality, where
 speed is an important consideration.  
+
 To accomplish this task, we utilized the Features from Accelerated
 Segment Test (FAST) algorithm to extract keypoints, and the Oriented
 FAST and Rotated BRIEF (ORB) algorithm to extract descriptors. The
@@ -359,9 +371,11 @@ matrix utilizing the Direct Linear Transformation (DLT) algorithm. The
 process was done using two different libraries, namely Numpy (CPU) and
 PyTorch (GPU), and the implementation can be viewed in the accompanying
 Python notebook.  
+
 The outcomes from using both the libraries were comparable, only
 diffrence was the computational time as GPUs are more faster than
 CPUs.  
+
 However, errors were observed in the results owing to the presence of
 outliers, which were addressed in the subsequent phase.
 
@@ -385,7 +399,7 @@ images by the Esirum logo are as bellow:
 
 <figure id="fig:5">
 <img src="Images/image_wrapping_CPU.png" />
-<figcaption>Image Wrapping using DLT performed on CPU</figcaption>
+
 </figure>
 
 The outcomes of the DLT performed on CPU revealed that the Esirum Logo
@@ -399,8 +413,7 @@ notebook.
 
 <figure id="fig:6">
 <img src="Images/image_wrapping_CPU_ransac.png" />
-<figcaption>Image Wrapping using DLT+RANSAC performed on
-CPU</figcaption>
+
 </figure>
 
 The outcomes of the DLT + RANSAC performed on CPU revealed that the
@@ -412,8 +425,6 @@ Python notebook.
 
 <figure id="fig:7">
 <img src="Images/image_wrapping_GPU_ransac.png" />
-<figcaption>Image Wrapping using DLT + RANSAC performed on
-GPU</figcaption>
 </figure>
 
 The outcomes of the DLT + RANSAC performed on CPU revealed that the
@@ -426,7 +437,6 @@ Python notebook.
 
 <figure id="fig:8">
 <img src="Images/image_wrapping_builtin_ransac.png" />
-<figcaption>Image Wrapping using Builtin + RANSAC</figcaption>
 </figure>
 
 The outcomes of using the builtin function of OpenCV + self implemented
@@ -465,7 +475,9 @@ with the newly launched cars.
 </figure>
 
 The outcomes of this exercise were impeccable, demonstrating the
-effectiveness and accuracy of the algorithm.// Wishing the best to team
+effectiveness and accuracy of the algorithm.
+
+Wishing the best to team
 Black (Mercedes AMG Petronas) Lewis Hamilton, George Russell and team
 red (Scuderia Ferrari) Charles Leclerc, and Carlos Sainz Jr. for this
 year’s season!
@@ -499,11 +511,13 @@ FAST and ORB</figcaption>
 As demonstrated in the preceding figure, numerous ambiguous outcomes
 were observed, even after filtering the results. This outcome can be
 attributed to the variations in illumination and the fundamental
-techniques utilized by the FAST and ORB algorithms.  
+techniques utilized by the FAST and ORB algorithms. 
+
 Moreover, it is worth noting that for the image wrapping process, the
 algorithm solely produced satisfactory results for this specific image
 and not the other images. The outcomes were imperfect when utilized on
 the other images.  
+
 The implementation can be viewed in the accompanying Python notebook.
 
 # Conclusion
@@ -518,6 +532,7 @@ Direct Linear Transformation (DLT) and compared the results with DLT in
 conjunction with Random Sample Consensus (RANSAC). The obtained
 homography matrix was then used to wrap Esirum’s logo on the images with
 the reference painting inside.  
+
 This study showcases the effectiveness of SIFT algorithm in identifying
 key features in images and the significance of the homography matrix in
 image transformation. The methodology used in this research can be
