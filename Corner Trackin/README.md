@@ -127,4 +127,50 @@ def gradient_images(image):
     return I_xx, I_yy, I_xy 
 ```
 
+### Harris Corner Detector
 
+To implement the Harris Corner detector, we compute the elements of the matrix **M** by the gradients gained by the previous step in the *x, y and xy* direction convolved with the Gaussian kernal (5x5) with $\sigma = 1$. The elements of the matrix M are:
+
+$$ det = I_{xx} * I_{yy} - I_{xy}^2 $$
+
+$$ trace = I_{xx} + I_{yy} $$
+
+The function is:
+
+```py
+def harris_response(I_xx, I_yy, I_xy, gaussian_w=gaussian_kernel(5, 1), k=0.06):
+
+    I_xx = convolve(I_xx, gaussian_w, mode='reflect')
+    I_yy = convolve(I_yy, gaussian_w, mode='reflect')
+    I_xy = convolve(I_xy, gaussian_w, mode='reflect')
+
+
+    # Compute the elements of the M matrix
+    det = I_xx * I_yy - I_xy * I_xy
+    trace = I_xx + I_yy
+    R = det - k * trace **2
+
+    # R = M / (I_xx + I_yy + k)
+
+    # Return the image with Harris corner response R
+    return R #np.clip(R, 0, 1)
+```
+### Non Max Supression -- NMS
+Non-Max Suppression (NMS) is a technique used in computer vision and image processing to reduce the number of detected objects in a set of bounding boxes. The main idea behind NMS is to keep only the most confident detection while suppressing all other overlapping bounding boxes that have a lower confidence score.
+
+The algorithm typically works by sorting the bounding boxes by their confidence scores, and then iterating over the boxes, retaining only the one with the highest score and suppressing all the other overlapping boxes that have an Intersection over Union (IoU) ratio higher than a pre-defined threshold.
+
+Using the built in OpenCV function, we applied NMS and were able to obtain the coordinates of the keypoints of the corners detected in the previous step.
+
+The function is:
+
+```py
+ def non_max_suppression(R):
+    filtered_coords = feature.peak.peak_local_max(
+        R,
+        min_distance=7, 
+        threshold_rel=0.01,
+        exclude_border=True, 
+        )
+    return filtered_coords 
+```
