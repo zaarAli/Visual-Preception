@@ -27,12 +27,14 @@ So we have :
 
 1. Intrinsic Paramters:
 
-$M_{int}=
+```math
+M_{int}=
 \left[\begin{matrix}
-fk_x & S & C_x & 0\\
-0 & fk_y & C_y & 0\\
+fk_x & S & C_x & 0 \\
+0 & fk_y & C_y & 0 \\
 0 & 0 & 1 & 0
-\end{matrix}\right]$
+\end{matrix}\right]
+```
 
 2. Extrinsic Paramters:
 $M_{ext}=
