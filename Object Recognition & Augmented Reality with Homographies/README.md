@@ -402,7 +402,7 @@ images by the Esirum logo are as bellow:
 
 </figure>
 
-The outcomes of the DLT performed on CPU revealed that the Esirum Logo
+The outcomes of the DLT performed on GPU revealed that the Esirum Logo
 was at the correct orientation, but was only partially overlapping with
 the painting. This observation can be attributed to the presence of
 outliers in the previous stage, which were addressed in the subsequent
