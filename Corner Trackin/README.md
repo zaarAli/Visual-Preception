@@ -451,6 +451,8 @@ def estimate_affine_transform(previous_frame, current_frame, method=cv2.RANSAC):
 
 # Results
 
+## Harris Corner Detector
+
 Here are a few results of the Harris Corner detector:
 
 
@@ -462,25 +464,27 @@ Here are a few results of the Harris Corner detector:
 
 The rest of the results can be seen in the uploaded folder.
 
+## Corner Tracking with Patch Templates based on pixel intensities
+
+![000000](https://user-images.githubusercontent.com/86875043/219847240-63b749e2-48bf-4a23-9816-03ed92f1b30c.png)
+![000001](https://user-images.githubusercontent.com/86875043/219847244-b222cf1f-9d41-46f0-bac7-2ec6ed0479a4.png)
+![000002](https://user-images.githubusercontent.com/86875043/219847246-86301ba6-71ad-42ad-b9ce-d70b22921bc0.png)
+![000003](https://user-images.githubusercontent.com/86875043/219847248-d62ccabf-a283-4ff0-8a69-cac06d3e0946.png)
+![000004](https://user-images.githubusercontent.com/86875043/219847252-37097f28-a187-4664-9eda-93830f6d4639.png)
+![000005](https://user-images.githubusercontent.com/86875043/219847260-76e6863b-c6fc-443c-a929-a8b098d4ad12.png)
 
 
-The video bellow shows the results of Corner tracking on the first 50 images of the kitti dataset using patches based on the intensites.
+The rest of the result can be seen in the uploaded folder with the same name. Also, you can see the video that has been uplaoaded.
 
+## Corner Tracking with Patch Templates based on pixel intensities
 
-(https://user-images.githubusercontent.com/86875043/219847041-fc4beff2-8922-4743-9164-0c3fec0401e3.mp4)
+![result_0](https://user-images.githubusercontent.com/86875043/219847194-78348dea-0a3c-4e39-94d2-8d1c7acff303.png)
+![result_1](https://user-images.githubusercontent.com/86875043/219847196-d0956b74-6051-4304-89fd-65b5fffc3614.png)
+![result_2](https://user-images.githubusercontent.com/86875043/219847198-8649492a-a027-45b9-aa39-03f6a838b8ad.png)
 
-
-
-The video bellow shows the results of Corner tracking on the first 50 images of the kitti dataset using SIFT features.
-
-
-https://user-images.githubusercontent.com/86875043/219847058-6acceba8-493d-4fa7-8cf7-f8838d8d1025.mp4
-
-
-
-
-
-
+![result_18](https://user-images.githubusercontent.com/86875043/219847206-8dc5f1c0-8909-4451-99a6-91c5e4ff1e72.png)
+![result_19](https://user-images.githubusercontent.com/86875043/219847207-c813b532-b180-4233-a411-fe6816dae397.png)
+![result_20](https://user-images.githubusercontent.com/86875043/219847211-821eaa05-1cd8-405b-ad53-40dd39ae7b16.png)
 
 # Conclusion
 
